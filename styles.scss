@@ -1,0 +1,36 @@
+/******* PALETA DE COLORES ********/
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+$custom-colors: (
+    "color1": #9f2b00,
+    "color2": #ef4452,
+    "color3": #acecd5,
+    "color4": #fff9aa,
+    "color5": #ffd5b8,
+    "color6": #ffb9b3,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+/******* FUENTES ********/
+body {
+    font-family: "Lato", sans-serif;
+    .titulo {
+        font-family: "Roboto Condensed", sans-serif;
+    }
+    .cursive {
+        font-family: "Satisfy", cursive;
+    }
+}
+
+/******* HERO ********/
+
+.hero-header {
+    background-image: url(./img/hero-img.jpg);
+    background-size: cover;
+    min-height: 80vh;
+    background-position: center;
+}
